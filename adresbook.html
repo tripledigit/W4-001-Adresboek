@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ADRESBOEK AMD</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+
+<br />
+
+<form onsubmit="invoer(); return false;">
+      <label>naam: <input type="text" id="naam"></input><br />
+      achternaam: <input type="text" id="achter"></input><br />
+      straat: <input type="text" id="straat"></input><br />
+      postcode: <input type="text" id="postcode"></input> <br />
+      stad: <input type="text" id="stad"></input> <br />
+      telefoonnummer: <input type="text" id="telefoon"></input><br />
+      e-mail adres: <input type="text" id="mail"></input><br /><br />
+      <input type="submit" onclick="invoer()" value="voeg toe aan boek"></label>
+ </form><br><br>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+   <button onclick="knopa()">Toon adresboek</button>
+   <!--<button onclick="knopb()">Invoer gegevens</button>>-->
+   <button onclick="knopc()">Zoek op beginletter achternaam</button>
+   <button onclick="myFunction()">Click me</button>
+
+ <p id="knopa"></p>
+ <p id="demo"></p>
+ <!--<p id="knopa"></p>-->
+ <p id="knopb"></p>
+ <p id="knopc"></p>
+
+<script>
+
+var adra = ["Arnold","Dijkstra","Koolwitje 14","7826GH","Emmen","0591 636363","a.m.k.dijkstra@gmail.com", "Abeltje","Deentra","zwartwitje 4","1010fd","Emmen","0591 655363","a.deentra@gmail.com"];
+var adrb = ["Berend","Botje","Hereweg 92","0101FF","Groningen","050 612263","bbotje@biermail.com"];
+var adrc = ["Carla", "Coren", "Heuvelrug 4", "3333cc", "Zondael", "111 001110", "cc@bla.com"];
+var adrd = [];
+var adre = [];
+var adrf = [];
+var adrg = [];
+var adrh = [];
+var adri = [];
+var adrj = [];
+var adrk = [];
+var adrl = [];
+var adrm = [];
+var adrn = [];
+var adro = [];
+var adrp = [];
+var adrq = [];
+var adrr = [];
+var adrs = [];
+var adrt = [];
+var adru = [];
+var adrv = [];
+var adrw = [];
+var adrx = [];
+var adry = [];
+var adrz = [];
+var adrcount = [adra, adrb, adrc, adrd, adre, adrf, adrg, adrh, adri, adrj, adrk, adrl, adrm, adrn, adro, adrp, adrq, adrr, adrs, adrt, adru, adrv, adrw, adrx, adry, adrz];
+var adrprnt = [];
+//var adrinput = [naam, achter, straat, postcode, stad, telefoon, mail];
+var adrinput = [naam, achter, straat, postcode, stad, telefoon, mail];
+var adroutput = outstring;
+
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+
+function knopa() {
+    document.getElementById("knopa").innerHTML = "Toon adresboek";
+      for (cnt = 0; cnt < 27; cnt++) {
+            adrprnt = adrcount[cnt]; {
+          for (n = 0; n < 14; n++) {
+            //('<div"position:absolute;left:200;top:200"><embed name="midi" src="'+mide+'" loop="1" autostart="true" hidden="false" width="300" height="100"></div>')
+            document.write(adrprnt[n] + " "+ "-"+ " ");
+      }
+    }
+  }
+}
+
+//function knopb() {
+//  document.getElementById("knopb").innerHTML = "Invoer gegevens";}
+
+function knopc() {
+  document.getElementById("knopc").innerHTML = "Zoeken op beginletter achternaam";
+}
+
+  function invoer() {
+        //document.getElementById('naam').innerHTML       = document.getElementById('naam').value ;
+        //document.getElementById('achter').innerHTML   = document.getElementById('achter').value ;
+        //document.getElementById('straat').innerHTML = document.getElementById('straat').value ;
+        //document.getElementById('postcode').innerHTML      = document.getElementById('postcode').value ;
+        //document.getElementById('stad').innerHTML      = document.getElementById('stad').value ;
+        //document.getElementById('telefoon').innerHTML  = document.getElementById('telefoon').value ;
+        //document.getElementById('mail').innerHTML       = document.getElementById('mail').value ;
+        adrinput[0] = document.getElementById("naam").value;
+        adrinput[1] = document.getElementById("achter").value;
+        adrinput[2] = document.getElementById("straat").value;
+        adrinput[3] = document.getElementById("postcode").value;
+        adrinput[4] = document.getElementById("stad").value;
+        adrinput[5] = document.getElementById("telefoon").value;
+        adrinput[6] = document.getElementById("mail").value; {
+        adrc.push(adrinput); {
+        //document.write(adrc); {
+
+    //}
+   }
+  }
+}
+
+</script>
+
+</body>
+
+</html>
