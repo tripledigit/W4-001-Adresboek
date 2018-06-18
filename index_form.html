@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BLOGspulv0</title>
+  </head>
+  <body>
+    <h1>BLOG versie 0.0</h1><br>
+    <!--<h2>Bezoekers klikken op de button</h2>-->
+    <!--<button id="bezoek" type="button">Bezoeker</button><br>-->
+    <!--<input type="button" name="Bezoeker" id="bezoek" value="Bezoeker"  onclick="phpbezoekscript.php" /><br/>-->
+
+    <h3>Blog formulier:</h3><br>
+
+      <!--invoer van naam, blogtitel en blog tekst en dan versturen naar het PHP gedeelte-->
+      <form id="login" action="phpblogscript.php" method="POST">
+
+        Naam:<br>
+        <input type="text" name="naam"><br><br>
+        Blogtitel:<br>
+        <input type="text" name="blogtitel"><br><br>
+        Blogtekst invoer: <br>
+        <textarea id="blogtekstinvoer" name="blogtekst" cols=80 rows=10> </textarea><br>
+
+        <input type="submit" value="Verzenden"><br><br>
+      </form>
+    <!--ruimte voor de blogtekst uitvoer-->
+    <div class="tekstuitvoer">
+      <textarea id="bloguitvoer" name="Blog" cols=80 rows=13></textarea>
+    </div>
+
+  </body>
+</html>
